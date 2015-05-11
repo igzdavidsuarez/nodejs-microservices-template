@@ -1,0 +1,26 @@
+{
+  "name": "services",
+  "version": "0.0.1",
+  "description": "The services API",
+  "main": "src/main.js",
+  "scripts": {
+    "style": "./node_modules/jscs/bin/jscs src/",
+    "lint": "./node_modules/jshint/bin/jshint src/",
+    "start": "node src/main"
+  },
+  "pre-commit": [
+    "style",
+    "lint"
+  ],
+  "author": "Angel Sanchez",
+  "license": "MIT",
+  "dependencies": {
+    "pigato": "0.0.38",
+    "zmq": "^2.11.0"
+  },
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.7.0",
+    "pre-commit": "^1.0.7"
+  }
+}

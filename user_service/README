@@ -1,0 +1,17 @@
+## Development requirements
+
+### Install ZeroMQ
+
+First off, you need to install [ZeroMQ](http://zeromq.org/).
+
+* Ubuntu
+
+```sh
+# apt-get install libzmq3-dev
+```
+
+* Fedora / CentOS
+
+```sh
+# yum install zeromq
+```
