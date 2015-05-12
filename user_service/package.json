@@ -2,12 +2,12 @@
   "name": "user_service",
   "version": "0.0.1",
   "description": "The User service",
-  "main": "src/main.js",
+  "main": "bin/user_service.js",
   "scripts": {
     "style": "./node_modules/jscs/bin/jscs src/",
     "lint": "./node_modules/jshint/bin/jshint src/",
     "test": "./node_modules/mocha/bin/mocha test/*",
-    "start": "node src/main"
+    "start": "node bin/user_service"
   },
   "pre-commit": [
     "style",
