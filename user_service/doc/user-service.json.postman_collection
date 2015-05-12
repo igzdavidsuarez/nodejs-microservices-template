@@ -1,0 +1,64 @@
+{
+	"id": "32f14aca-6abe-38d8-8f9b-7694221e606e",
+	"name": "user-service",
+	"description": "",
+	"order": [
+		"1531b974-76dc-4111-7f95-bc99088bfe41",
+		"967a17dd-7fb2-c719-8313-26b64982f30d"
+	],
+	"folders": [],
+	"timestamp": 1431420171937,
+	"synced": false,
+	"owner": "",
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "1531b974-76dc-4111-7f95-bc99088bfe41",
+			"headers": "",
+			"url": "http://localhost:3000/user/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "5551c20d386d54011779d85e"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1431421569783,
+			"name": "Get User",
+			"description": "",
+			"collectionId": "32f14aca-6abe-38d8-8f9b-7694221e606e",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "967a17dd-7fb2-c719-8313-26b64982f30d",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:3000/user",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "32f14aca-6abe-38d8-8f9b-7694221e606e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1431421549387,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionOwner": 0,
+			"synced": false,
+			"rawModeData": "{\n    \"name\": \"Peter Parker\",\n    \"birthday\": \"Tue May 12 2015 10:59:50 GMT+0200 (CEST)\"\n}"
+		}
+	]
+}

@@ -1,6 +1,6 @@
 {
   "name": "services",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "The services API",
   "main": "src/main.js",
   "scripts": {

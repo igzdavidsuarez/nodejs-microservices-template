@@ -8,19 +8,30 @@ client.on('error', function(e) {
   console.log('PIGATO CLIENT ERROR', e);
 });
 
+function clientRequest(service, op, params, callback) {
+  client.request(
+    service,
+    {op: op, params: params},
+    null,
+    function(err, data) {
+      if (err) {
+        console.error(err);
+        return callback(err);
+      }
+
+      callback(data.error, data.result);
+    },
+    {timeout: 10000}
+  );
+}
+
 module.exports = {
   user: {
-    getById: function(id, callback) {
-
-      // TODO service.send('user', 'getById', {id: id}, callback);
-
-      client.request(
-        'user', {op: 'getById', params: {id: id}},
-        null,
-        function(err, data) {
-          callback(err, data);
-        }, { timeout: 10000 }
-      );
+    getUser: function(id, callback) {
+      clientRequest('user', 'getUser', {id: id}, callback);
+    },
+    createUser: function(userData, callback) {
+      clientRequest('user', 'createUser', {userData: userData}, callback);
     }
   }
 };
