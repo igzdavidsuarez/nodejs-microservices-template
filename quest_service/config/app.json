@@ -1,0 +1,8 @@
+{
+  "broker": {
+    "host": "tcp://127.0.0.1:3008"
+  },
+  "db" : {
+    "conn" : "mongodb://localhost/quest-service-example"
+  }
+}

@@ -33,5 +33,13 @@ module.exports = {
     createUser: function(userData, callback) {
       clientRequest('user', 'createUser', {userData: userData}, callback);
     }
+  },
+  quest:{
+      createQuest: function(quest, callback) {
+        clientRequest('quest', 'createQuest', {quest: quest}, callback);
+      },
+      getQuests: function(callback) {
+        clientRequest('quest', 'getQuests', {}, callback);
+      }
   }
 };
